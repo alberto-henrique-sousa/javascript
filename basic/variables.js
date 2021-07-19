@@ -46,3 +46,26 @@ let emptiness_2 = null; // aqui é indicado intencionalmente que não tem valor 
 console.log(emptiness_2, emptiness_2 + 3, `o valor é ${emptiness_2}`);
 
 // operações matemáticas envolvendo null é automaticamente convertido para o valor 0
+
+/* 
+    Spread operator (...)
+    Spread = Espalhar os elementos em tempo de execução
+*/
+
+// Sem Spread
+
+console.log();
+console.log("Spread operator - ES6");
+console.log("===============");
+
+var middle = [3, 4];
+var arr = [1, 2, middle, 5, 6];
+console.log("Sem Spread: ", arr);
+// [1, 2, [3, 4], 5, 6]
+
+var middle = [3, 4];
+var arr = [1, 2, ...middle, 5, 6];
+console.log("Com Spread: ", arr);
+// [1, 2, 3, 4, 5, 6]
+
+
